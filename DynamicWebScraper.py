@@ -39,6 +39,7 @@ def followDirections(html, directions):
   for i in directions:
     html = html.find_all(i[0])[i[1]]
   return html
+
 class Website():
   def __init__(self, URL: str, checkURL=False):
     if checkURL:
